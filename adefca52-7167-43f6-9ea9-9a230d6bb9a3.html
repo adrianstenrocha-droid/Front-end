@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Institución - Tailwind Puro</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-graduation-cap text-indigo-600 text-4xl"></i>
+                    <div class="leading-tight">
+                        <span class="block font-bold text-xl text-slate-900">Mi Institución</span>
+                        <span class="block text-xs text-slate-500">Aprende &bull; Crece &bull; Logra</span>
+                    </div>
+                </a>
+
+                <!-- Navegación Desktop -->
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="#" class="bg-purple-700 text-white font-semibold text-sm px-5 py-2 rounded-full shadow-sm">Inicio</a>
+                    <a href="#cursos" class="text-slate-700 hover:bg-violet-800 font-semibold text-sm px-3 py-2 transition">Cursos</a>
+                    <a href="#nosotros" class="text-slate-700 hover:bg-violet-800 font-semibold text-sm px-3 py-2 transition">Nosotros</a>
+                    <a href="#contacto" class="text-slate-700 hover:bg-violet-800 font-semibold text-sm px-3 py-2 transition">Contacto</a>
+                    
+                    <a href="#" class="ml-2 bg-purple-700 hover:bg-violet-800 text-white font-semibold text-sm px-5 py-2.5 rounded-full inline-flex items-center gap-2 shadow-sm transition">
+                        <i class="fa-solid fa-user text-xs"></i> Inscríbete
+                    </a>
+                </nav>
+
+                <!-- Botón Móvil -->
+                <button class="md:hidden text-slate-800 text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden bg-slate-100 pt-12 lg:pt-16 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
+                <!-- Columna Izquierda -->
+                <div class="lg:col-span-6 pb-12 lg:pb-20">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-5">
+                        Tu futuro comienza<br>
+                        <span class="text-purple-700">con nosotros</span>
+                    </h1>
+                    <p class="text-slate-600 text-lg max-w-md mb-8 leading-relaxed">
+                        Formación de calidad para desarrollar tus habilidades y alcanzar tus metas.
+                    </p>
+                    <a href="#cursos" class="inline-flex items-center gap-2.5 bg-purple-700 hover:bg-violet-800 text-white font-semibold px-7 py-3.5 rounded-full shadow-md transition">
+                        Conoce nuestros cursos
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Columna Derecha (Imagen) -->
+                <div class="lg:col-span-6 flex justify-center lg:justify-end self-end">
+                    <img src="foto.png" 
+                         alt="Estudiantes universitarios" 
+                         class="max-h-[400px] w-auto object-cover rounded-t-3xl shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NUESTROS CURSOS -->
+    <section id="cursos" class="py-16 lg:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Título con líneas laterales -->
+            <div class="text-center mb-14">
+                <div class="flex items-center justify-center gap-4 mb-2">
+                    <span class="hidden sm:block h-0.5 w-20 bg-purple-700"></span>
+                    <h2 class="text-3xl font-bold text-slate-900">Nuestros Cursos</h2>
+                    <span class="hidden sm:block h-0.5 w-20 bg-purple-700"></span>
+                </div>
+                <p class="text-slate-500 text-base">Aprende nuevas habilidades con nuestros programas</p>
+            </div>
+
+            <!-- Grid de 4 Tarjetas -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Tarjeta 1: Informática -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-7 text-center shadow-sm hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Informática</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Domina las herramientas digitales más demandadas.</p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-flex items-center gap-1.5 bg-purple-700 hover:bg-violet-800 text-white text-xs font-semibold px-5 py-2.5 rounded-full transition">
+                            Ver más <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Gastronomía -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-7 text-center shadow-sm hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Gastronomía</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Descubre el arte de la cocina.</p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-flex items-center gap-1.5 bg-purple-700 hover:bg-violet-800 text-white text-xs font-semibold px-5 py-2.5 rounded-full transition">
+                            Ver más <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Administración -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-7 text-center shadow-sm hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Administración</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Impulsa tu crecimiento profesional.</p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-flex items-center gap-1.5 bg-purple-700 hover:bg-violet-800 text-white text-xs font-semibold px-5 py-2.5 rounded-full transition">
+                            Ver más <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Marketing Digital -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-7 text-center shadow-sm hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Marketing Digital</h3>
+                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">Conecta y posiciona tu marca.</p>
+                    </div>
+                    <div>
+                        <a href="#" class="inline-flex items-center gap-1.5 bg-purple-700 hover:bg-violet-800 text-white text-xs font-semibold px-5 py-2.5 rounded-full transition">
+                            Ver más <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE CONTACTO Y SUSCRIPCIÓN -->
+    <section id="contacto" class="pb-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-purple-700 rounded-2xl p-6 lg:p-8 text-white shadow-lg">
+                <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-6">
+                    
+                    <!-- Icono y Título -->
+                    <div class="lg:col-span-4 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg leading-snug">¿Tienes alguna pregunta?</h4>
+                            <p class="text-indigo-200 text-sm">Contáctanos y te ayudaremos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Información de Contacto -->
+                    <div class="lg:col-span-3 text-sm space-y-1.5 text-indigo-100">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-xs"></i>
+                            <span>Tel. (605) 123 4567</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-xs"></i>
+                            <span>Cra. 45 # 30-20, Barranquilla</span>
+                        </div>
+                    </div>
+
+                    <!-- Formulario Newsletter -->
+                    <div class="lg:col-span-5">
+                        <form class="flex flex-col sm:flex-row gap-2.5">
+                            <input type="email" placeholder="Tu correo electrónico" required
+                                   class="w-full px-5 py-2.5 rounded-full text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                            <button type="submit" 
+                                    class="bg-white hover:bg-slate-100 text-indigo-600 font-bold text-sm px-6 py-2.5 rounded-full shrink-0 transition">
+                                Suscribirme
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-100 py-6 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                
+                <!-- Marca y Redes Sociales -->
+                <div class="flex items-center gap-4">
+                    <a href="#" class="flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-indigo-600 text-2xl"></i>
+                        <span class="font-bold text-lg text-slate-900">Mi Institución</span>
+                    </a>
+                    <span class="text-slate-300">|</span>
+                    <div class="flex items-center gap-4 text-slate-700">
+                        <a href="#" class="hover:text-indigo-600 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-indigo-600 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-indigo-600 transition"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="hover:text-indigo-600 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-slate-500 text-xs">
+                    &copy; 2026 Mi Institución. Todos los derechos reservados.
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
